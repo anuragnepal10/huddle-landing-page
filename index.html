@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/images/favicon-32x32.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 
   <style>
@@ -13,7 +16,7 @@
 
 </head>
 
-<body class="font-primary bg-white text-dark-cyan text-base text-center">
+<body class="font-primary bg-white text-dark-cyan text-base text-center  space-y-16">
   <!-- Header -->
   <header class="py-8 bg-pale-cyan space-y-24">
     <!-- Nav -->
@@ -45,16 +48,131 @@
     </section>
   </header>
 
+  <!-- Main -->
+  <main class="container">
+    <!-- Top -->
+    <section class="space-y-10">
+
+      <!-- Article 1 -->
+      <article class="rounded-lg shadow-custom p-8 grid gap-12">
+        <!-- Image -->
+        <div class="px-8 mx-auto">
+          <img src="images/illustration-grow-together.svg" alt="">
+        </div>
+        <!-- Content -->
+        <div class="space-y-4">
+          <h2 class="font-secondary font-bold text-xl">Grow Together</h2>
+          <p class="text-sm text-gray"> Generate meaningful discussions with your audience and build a strong, loyal
+            community.
+            Think of the
+            insightful conversations you miss out on with a feedback form.
+          </p>
+        </div>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="rounded-lg shadow-custom p-8 grid gap-12">
+        <!-- Image -->
+        <div class="px-8 mx-auto">
+          <img src="images/illustration-flowing-conversation.svg" alt="">
+        </div>
+        <!-- Content -->
+        <div class="space-y-4">
+          <h2 class="font-secondary font-bold text-xl">Flowing Conversations</h2>
+          <p class="text-sm text-gray"> You wouldn't paginate a conversation in real life, so why do it online? Our
+            threads have just-in-time loading for a
+            more natural flow.
+
+          </p>
+        </div>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="rounded-lg shadow-custom p-8 grid gap-12">
+        <!-- Image -->
+        <div class="px-8 mx-auto">
+          <img src="images/illustration-your-users.svg" alt="">
+        </div>
+        <!-- Content -->
+        <div class="space-y-4">
+          <h2 class="font-secondary font-bold text-xl">Your Users</h2>
+          <p class="text-sm text-gray"> It takes no time at all to integrate Huddle with your app's authentication
+            solution. This means, once signed in to
+            your app, your users can start chatting immediately.
+
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Bottom -->
+    <article class="px-4 py-10 space-y-6 shadow-custom rounded-3xl relative top-32 bg-white">
+      <h2 class="font-secondary font-bold text-lg">Ready To Build Your Community?</h2>
+      <Button class="font-bold text-xs bg-pink text-white py-3 px-6 rounded-full w-2/3 drop-shadow-lg">Get Started For
+        Free</Button>
+    </article>
+  </main>
 
 
-  Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful
-  conversations you miss out on with a feedback form.
+  <!-- Footer -->
+  <footer class="bg-dark-cyan container pt-40 pb-12 text-white text-left grid gap-12">
+    <!-- Col-1 -->
+    <div class="space-y-6">
+      <!-- Logo -->
+      <div class="w-40">
+        <img src="/images/logo-white.svg" alt="">
+      </div>
+      <!-- Info -->
+      <div class="w-full flex gap-8">
+        <i class="pt-1 fa-sharp fa-solid fa-location-dot"></i>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto nulla nisi ullam animi voluptatibus
+          consectetur? Molestias.</p>
+      </div>
+      <div class="w-full flex gap-8">
+        <i class="pt-1 fa-solid fa-phone-volume"></i>
+        <p>+1-542-123-4567</p>
+      </div>
+      <div class="w-full flex gap-8">
+        <i class="pt-1 fa-solid fa-envelope"></i>
 
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a
-  more natural flow.
+        <p>example@fylo.com</p>
+      </div>
+    </div>
 
-  It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to
-  your app, your users can start chatting immediately.
+    <!-- Col-2 -->
+    <div class="grid gap-4">
+      <a href="">About Us</a>
+      <a href="">What We Do</a>
+      <a href="">FAQ</a>
+      <a href="">Career</a>
+      <a href="">Blog</a>
+      <a href="">Contact Us</a>
+    </div>
+
+    <!-- Col-3 -->
+    <!-- Socials -->
+    <div class="flex flex-col gap-6">
+      <div class="m-auto space-x-4">
+        <a href="">
+          <i
+            class=" rounded-full border-white border-[1px] w-8 text-center leading-8 aspect-square fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="">
+          <i
+            class=" rounded-full border-white border-[1px] w-8 text-center leading-8 aspect-square fa-brands fa-twitter"></i>
+        </a>
+        <a href="">
+          <i
+            class=" rounded-full border-white border-[1px] w-8 text-center leading-8 aspect-square fa-brands fa-instagram"></i>
+        </a>
+      </div>
+      <!-- Copyright -->
+      <p class="text-xs text-center">&copy; Copyright 2018 Huddle. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
   <div id="app"></div>
   <script type="module" src="/main.js"></script>
 </body>

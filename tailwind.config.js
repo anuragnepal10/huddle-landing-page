@@ -1,8 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+	future: {
+		hoverOnlyWhenSupported: true,
+	},
 	theme: {
-		extend: {},
+		extend: {
+			boxShadow: {
+				custom: 'rgba(0, 0, 0, 0.1) 4px 4px 20px',
+			},
+		},
 		container: {
 			center: true,
 			padding: {
